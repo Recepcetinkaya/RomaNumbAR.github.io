@@ -164,7 +164,7 @@ footer .footer-image {
     left: 0;
     width: 100%; /* Görsel genişliği ekranı kapsasın */
     height: 200%; /* Görselin yüksekliği footer'ın 3 katı */
-    background: url('images/roman_numb_ar.png') no-repeat center center;
+    background: url('https://r.resimlink.com/X4_-ZCoWSmQ.jpeg') no-repeat center center;
     background-size: cover; /* Görselin tüm alanı kaplamasını sağla */
     transition: transform 1.5s ease-out; /* Hareket için yumuşak geçiş */
 }
