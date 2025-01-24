@@ -41,6 +41,26 @@
             </div>
         </div>
     </main>
+     <footer class="footer-small">
+        <div class="footer-image">
+            <img src="https://r.resimlink.com/X4_-ZCoWSmQ.jpeg" alt="Roman Numb AR Görseli">
+       
+    </footer>
+    <script>
+        document.addEventListener('scroll', function () {
+            const footer = document.querySelector('footer.footer-small');
+            const scrollY = window.scrollY; // Sayfanın dikey kaydırma miktarı
+            const viewportHeight = window.innerHeight; // Görünen pencere yüksekliği
+            const footerTop = footer.offsetTop; // Footer'ın üst pozisyonu
+    
+            // Sayfa kaydırıldığında sınıf ekle
+            if (scrollY + viewportHeight >= footerTop) {
+                footer.classList.add('scrolled');
+            } else {
+                footer.classList.remove('scrolled');
+            }
+        });
+    </script>
      
     <!-- Telefon Görselleri -->
     <!--<img src="telefon-sag.png" alt="Telefon Görseli" class="side-image right">
