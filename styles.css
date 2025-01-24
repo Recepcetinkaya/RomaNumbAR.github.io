@@ -148,6 +148,31 @@ header p {
     background-color: #0ff;
 }
 
+/* Küçük footer ayarları */
+footer.footer-small {
+    position: relative; /* Parallax için konum ayarı */
+    background: linear-gradient(135deg, #000, #8a2be2); /* Mor tonlu arka plan */
+    text-align: center;
+    padding: 0; /* Üst ve alt boşluğu sıfırla */
+    height: 300px; /* Footer yüksekliği */
+    overflow: hidden; /* Taşan içerikleri gizle */
+}
+
+footer .footer-image {
+    position: absolute;
+    bottom: -90%; /* Görsel başlangıçta görünmesin */
+    left: 0;
+    width: 100%; /* Görsel genişliği ekranı kapsasın */
+    height: 200%; /* Görselin yüksekliği footer'ın 3 katı */
+    background: url('images/roman_numb_ar.png') no-repeat center center;
+    background-size: cover; /* Görselin tüm alanı kaplamasını sağla */
+    transition: transform 1.5s ease-out; /* Hareket için yumuşak geçiş */
+}
+
+footer.footer-small.scrolled .footer-image {
+    transform: translateY(-70%); /* Scroll edildikçe görsel yukarı hareket eder */
+}
+
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
     .button-container {
